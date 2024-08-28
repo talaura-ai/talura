@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -27,18 +27,21 @@
 
   <style>
     .wrapper {
+      position: relative;
       display: flex;
-      width: 90%;
+      width: 100%;
       justify-content: space-around;
+      height: 200px;
     }
 
     .card {
+      position: relative;
+      top: -230px;
       width: 280px;
       height: 360px;
       border-radius: 6px;
       padding: 1.5rem;
       background: white;
-      position: relative;
       display: flex;
       align-items: flex-end;
       transition: 0.4s ease-out;
@@ -136,6 +139,18 @@
         align-items: center;
       }
     }
+
+    .team-container {
+      max-width: 100%;
+      padding: 14px 14px;
+    }
+
+    .section-header {
+      width: 100%;
+      background-color: #a5bcdd;
+      padding: 4rem 0 280px 0;
+      margin-top: 80px;
+    }
   </style>
 
 
@@ -175,7 +190,7 @@
     </svg>
   </div>
 
- 
+
   <!-- offcanvas start  -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
@@ -301,7 +316,60 @@
 
 
         <main>
-          <section style="width: 100%;display: flex;margin-top: 100px;
+          <section class="team-container">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <div class="title-wrapper">
+                  <h2 class="section-title has_fade_anim text-center text-white">
+                    Our Team
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="card"><img
+                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                <div class="info">
+                  <h1>Road</h1>
+                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry </p>
+                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
+                </div>
+                <p class="name">Kalim Ali</p>
+              </div>
+              <div class="card"><img
+                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                <div class="info">
+                  <h1>Mountain</h1>
+                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
+                </div>
+                <p class="name">Kalim Ali</p>
+              </div>
+
+
+              <div class="card"><img
+                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                <div class="info">
+                  <h1>Mountain</h1>
+                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
+                </div>
+                <p class="name">Kalim Ali</p>
+              </div>
+              <div class="card"><img
+                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                <div class="info">
+                  <h1>Road</h1>
+                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
+                </div>
+                <p class="name">Kalim Ali</p>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- <section style="width: 100%;display: flex;margin-top: 100px;
           justify-content: center;gap: 3rem;
           align-items: center;flex-direction: column; padding-bottom: 40px;">
             <div class="section-header">
@@ -357,7 +425,7 @@
 
             </div>
 
-          </section>
+          </section> -->
         </main>
 
         <!-- footer area start  -->
@@ -385,7 +453,7 @@
                 </ul>
               </div>
 
-            
+
               <div class="footer-widget-wrapper">
                 <h2 class="title text-light">Newsletter</h2>
                 <form action="#" class="subscribe-form">
