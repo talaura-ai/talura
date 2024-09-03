@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sassly HTML5 Template">
 
-  <title>Sassly About</title>
+  <title>Talura Ai | About</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.webp">
@@ -30,8 +30,10 @@
       position: relative;
       display: flex;
       width: 100%;
-      justify-content: space-around;
+      justify-content: space-evenly;
       height: 200px;
+      flex-wrap: wrap;
+      gap: 2rem 0;
     }
 
     .card {
@@ -120,7 +122,8 @@
       font-size: 1.6rem;
       font-weight: 600;
     }
-    .second-name{
+
+    .second-name {
       bottom: 0.8rem;
       left: 0.6rem;
       font-size: 1rem;
@@ -134,11 +137,15 @@
       color: #fff;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 1024px) {
       .wrapper {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
+        height: 550px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .wrapper {
+        height: 1350px;
       }
     }
 
@@ -196,61 +203,18 @@
   <!-- offcanvas start  -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
-      <span id="close_offcanvas" class="close-offcanvas">
-        <img src="assets/imgs/icon/close.png" alt="close">
+      <span class="close-offcanvas">
       </span>
-      <div class="offcanvas-btn-wrapper">
-        <a target="_blank" href="https://themeforest.net/item/axtra-digital-agency-creative-portfolio-theme/43074408"
-          class="wc-btn wc-btn-default btn-hover-cropping">Purchase now</a>
+      <div class="offcanvas-btn-wrapper" id="close_offcanvas">
+        <img src="assets/imgs/icon/close.png" alt="close">
       </div>
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
-        <li>
-          <div class="link">Home <img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
-          </div>
-          <ul class="submenu">
-            <li><a href="ai-content-writer.html">AI Content Writer</a></li>
-            <li><a href="ai-image-generator.html">AI Image Generator</a></li>
-            <li><a href="ai-chatbot.html">AI Chatbot</a></li>
-            <li><a href="ai-seo.html">AI SEO Software</a></li>
-            <li><a href="ai-software.html">AI Startups</a></li>
-            <li><a href="ai-video-editor.html">AI Video Editor</a></li>
-            <li><a href="booking.html">Booking Software</a></li>
-            <li><a href="online-meeting.html">Virtual Meeting</a></li>
-            <li><a href="crm.html">CRM Software</a></li>
-            <li><a href="customer-service.html">Customer Support</a></li>
-            <li><a href="mobile-apps.html">Mobile App / SASS</a></li>
-            <li><a href="marketing-automation.html">Marketing automation</a></li>
-          </ul>
-        </li>
-        <li>
+        <li><a href="/">Product</a></li>
+        <li><a href="https://talaura.ai/blog">Blogs</a></li>
+        <li><a href="/">News In Press</a></li>
         <li><a href="about.html">About</a></li>
-        <li>
-          <div class="link">Pages<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
-          <ul class="submenu">
-            <li><a href="integration.html">integration</a></li>
-            <li><a href="integration-single.html">integration single</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="404.html">404</a></li>
-            <li><a href="pricing.html">pricing</a></li>
-            <li><a href="faq.html">faq</a></li>
-            <li><a href="all-template.html">video templete</a></li>
-            <li><a href="team.html">team page</a></li>
-            <li><a href="privacy-policy.html">privacy policy</a></li>
-          </ul>
-        </li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="faq.html">FaQ</a></li>
-        <li>
-          <div class="link">Blog<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
-          <ul class="submenu">
-            <li><a href="blog.html">Our Blog</a></li>
-            <li><a href="blog-details.html">Blog Details</a></li>
-          </ul>
-        </li>
       </ul>
     </div>
   </div>
@@ -289,7 +253,7 @@
             <ul>
               <li><a href="/">Product</a>
               </li>
-              <li><a href="maintainence.html">Blogs</a></li>
+              <li><a href="http://talaura.ai/blog">Blogs</a></li>
               <li><a href="news-in-press.html">News In Press</a></li>
               <li><a href="about.html">About</a></li>
             </ul>
@@ -329,112 +293,70 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  
-                  <p class="fw-bold fs-6">Co-founder, OfBusiness | Co-founder Oxyzo</p>
-                  <p>Nitin has co-founded 2 unicorns and has scaled multiple businesses to $100M+ valuation. He has been
-                    named in the Forbes India Tycoons of Tomorrow 2021 list and has won the ET Startup of the Year 2023.
-                  </p>
-                  <a href="https://www.linkedin.com/in/nitin-jain-17b82310" target="_blank"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Nitin Jain</p>
-                <p class="name second-name">IIT Delhi Silver Medalist</p>
+              <div class="card">
+                <a href="https://www.linkedin.com/in/nitin-jain-17b82310" target="_blank"><img
+                    src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                  <div class="info">
+
+                    <p class="fw-bold fs-6">Co-founder, OfBusiness | Co-founder Oxyzo</p>
+                    <p>Nitin has co-founded 2 unicorns and has scaled multiple businesses to $100M+ valuation. He has
+                      been
+                      named in the Forbes India Tycoons of Tomorrow 2021 list and has won the ET Startup of the Year
+                      2023.
+                    </p>
+                    <i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i>
+                  </div>
+                  <p class="name">Nitin Jain</p>
+                  <p class="name second-name">IIT Delhi Silver Medalist</p>
+                </a>
               </div>
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <p class="fw-bold fs-6">Ex-McKinsey | Ex-Head of Strategy, Ratio</p>
-                  <p>Kabir is a StraOps consultant turned operator. He has scaled multiple consumer tech products and categories at MPL and Rario.</p>
-                  <a href="https://www.linkedin.com/in/khattarkabir" target="_blank"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Kabir Khattar</p>
-                <p class="name second-name">IIM Lucknow</p>
+              <div class="card">
+                <a href="https://www.linkedin.com/in/khattarkabir" target="_blank"><img
+                    src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                  <div class="info">
+                    <p class="fw-bold fs-6">Ex-McKinsey | Ex-Head of Strategy, Ratio</p>
+                    <p>Kabir is a StraOps consultant turned operator. He has scaled multiple consumer tech products and
+                      categories at MPL and Rario.</p>
+                    <i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i>
+                  </div>
+                  <p class="name">Kabir Khattar</p>
+                  <p class="name second-name">IIM Lucknow</p>
+                </a>
               </div>
 
 
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <p class="fw-bold fs-6">Ex-CEO & Founder, FTL</p>
-                  <p>Shaaz is a tech entrepreneur and public speaker specializing in the AI/ML domain. He has authored influential AI papers and has scaled a gaming startup.</p>
-                  <a href="https://www.linkedin.com/in/syed-shaaz-548950bb" target="_blank"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Syed Shaaz</p>
-                <p class="name second-name">VIT, Vellore</p>
+              <div class="card">
+                <a href="https://www.linkedin.com/in/syed-shaaz-548950bb" target="_blank"><img
+                    src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                  <div class="info">
+                    <p class="fw-bold fs-6">Ex-CEO & Founder, FTL</p>
+                    <p>Shaaz is a tech entrepreneur and public speaker specializing in the AI/ML domain. He has authored
+                      influential AI papers and has scaled a gaming startup.</p>
+                    <i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i>
+                  </div>
+                  <p class="name">Syed Shaaz</p>
+                  <p class="name second-name">VIT, Vellore</p>
+                </a>
               </div>
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <p class="fw-bold fs-6">Ex-CHRO Edelweiss, Unilever, Dr. Reddy’s</p>
-                  <p>Vikas is an HR veteran with 24 years of experience in the industry. He has managed diverse workforces, led strategy and change initiatives, built startups and has global experience. He is DISC, MBTI and Hogan certified professional.</p>
-                  <a href="https://www.linkedin.com/in/vikas-bansal-5576683" target="_blank"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Vikas Bansal</p>
-                <p class="name second-name">SIBM Pune</p>
+              <div class="card">
+                <a href="https://www.linkedin.com/in/vikas-bansal-5576683" target="_blank"><img
+                    src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                  <div class="info">
+                    <p class="fw-bold fs-6">Ex-CHRO Edelweiss, Unilever, Dr. Reddy’s</p>
+                    <p>Vikas is an HR veteran with 24 years of experience in the industry. He has managed diverse
+                      workforces, led strategy and change initiatives, built startups and has global experience. He is
+                      DISC, MBTI and Hogan certified professional.</p>
+                    <i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i>
+                  </div>
+                  <p class="name">Vikas Bansal</p>
+                  <p class="name second-name">SIBM Pune</p>
+                </a>
               </div>
 
             </div>
 
           </section>
-          <!-- <section style="width: 100%;display: flex;margin-top: 100px;
-          justify-content: center;gap: 3rem;
-          align-items: center;flex-direction: column; padding-bottom: 40px;">
-            <div class="section-header">
-              <div class="section-title-wrapper">
-                <div class="title-wrapper">
-                  <h2 class="section-title has_fade_anim text-center">
-                    Our Team
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <h1>Road</h1>
-                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry </p>
-                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Kalim Ali</p>
-              </div>
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <h1>Mountain</h1>
-                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Kalim Ali</p>
-              </div>
-
-
-            </div>
-            <div class="wrapper">
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <h1>Mountain</h1>
-                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Kalim Ali</p>
-              </div>
-              <div class="card"><img
-                  src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-                <div class="info">
-                  <h1>Road</h1>
-                  <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                  <a href="/"><i class="fa-brands fa-linkedin fa-xl linkedin-icon"></i></a>
-                </div>
-                <p class="name">Kalim Ali</p>
-              </div>
-
-            </div>
-
-          </section> -->
+    
         </main>
 
         <!-- footer area start  -->
@@ -455,7 +377,7 @@
               <div class="footer-widget-wrapper">
                 <h2 class="title text-light">Company</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="maintainence.html">Blogs</a></li>
+                  <li><a href="http://talaura.ai/blog">Blogs</a></li>
                   <li><a href="#">News In Press</a></li>
                   <li><a href="/about.html">About</a></li>
                   <li><a href="/contact.html">Contact</a></li>
