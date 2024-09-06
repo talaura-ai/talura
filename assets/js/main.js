@@ -29,9 +29,13 @@
     if (window.scrollY > 500) {
       header.classList.add('sticky')
       header.style.boxShadow = '0 0 2px 0 rgba(0,0,0,0.4)'
+      document.querySelector('.header__logo a').style.color = '#fff'
+      document.querySelector('.company-letter').style.color = '#fff'
     } else {
       header.classList.remove('sticky')
       header.style.boxShadow = '0px 0px 0px 0 rgba(0,0,0,0)'
+      document.querySelector('.header__logo a').style.color = '#5c6972'
+      document.querySelector('.company-letter').style.color = '#6BE4AB'
     }
   })
 
