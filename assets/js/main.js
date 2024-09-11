@@ -39,6 +39,14 @@
     }
   })
 
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      document.querySelector('.company-letter-index').style.color = '#fff'
+    } else {
+      document.querySelector('.company-letter-index').style.color = '#6BE4AB'
+    }
+  })
+
   // Screen Width
   var device_width = window.screen.width;
   var overlay = document.querySelector('.overlay-switcher-close');
