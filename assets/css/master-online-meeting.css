@@ -7722,8 +7722,11 @@ section {
     padding-top: 120px;
     padding-bottom: 160px;
   }
-    .space{
+.space{
     padding: 20px 0;
+  }
+  .padding-hero-bottom{
+    padding-bottom: 70px !important;
   }
 }
 @media only screen and (max-width: 991px) {
