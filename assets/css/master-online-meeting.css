@@ -8994,6 +8994,9 @@ section {
 .progress-wrap svg.progress-circle path {
   stroke: var(--theme);
 }
+.mobile_view{
+    display: none;
+}
 @media only screen and (max-width: 600px) {
   .wc-btn-primary {
     padding: 15px 25px;
@@ -9031,6 +9034,9 @@ section {
   .mobile-margin-top {
     margin-top: 60px;
   }
+  .mobile-margin{
+    margin: 60px 0;
+  }
   .mobile-margin-bottom {
     margin-bottom: 60px;
   }
@@ -9042,5 +9048,8 @@ section {
   }
   .mobile-heading {
     font-size: 36px;
+  }
+  .mobile-bottom-margin-zero{
+    margin-bottom: 0;
   }
 } /*# sourceMappingURL=master-online-meeting.css.map */
