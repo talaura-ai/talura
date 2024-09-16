@@ -7719,10 +7719,11 @@ section {
     padding-bottom: 100px !important;
   }
   .extra-space{
-    padding: 160px 0;
+    padding-top: 120px;
+    padding-bottom: 160px;
   }
     .space{
-    padding: 100px 0;
+    padding: 20px 0;
   }
 }
 @media only screen and (max-width: 991px) {
