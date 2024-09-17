@@ -8997,7 +8997,18 @@ section {
 .mobile_view{
     display: none;
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktop_image{
+  width: 55%;
+}
 @media only screen and (max-width: 600px) {
+  .desktop_image{
+    width: 100%;
+  }
   .wc-btn-primary {
     padding: 15px 25px;
   }
